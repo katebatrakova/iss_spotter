@@ -11,7 +11,7 @@ nextISSTimesForMyLocation()
     printPassTimes(passTimes);
   })
   .catch((error) => {
-    console.log("It didn't work: ", error.message);
+    return error.message;
   });
 
 
